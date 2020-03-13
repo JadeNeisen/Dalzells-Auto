@@ -1,0 +1,119 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media all and (max-width: 767px) {
+  .navHeader,
+  .fullPage {
+    display: none;
+  }
+  /* header */
+  .mobile {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(29, 74, 134, 0.801);
+    padding: 2%;
+  }
+  .mobile h1 {
+    font-size: 16px;
+    text-align: right;
+    color: rgb(223, 223, 28);
+    text-shadow: 0.01em 0.01em 0.09em black;
+  }
+  .mobile a {
+    text-decoration: none;
+    color: rgb(223, 223, 28);
+  }
+  .dropDown {
+    display: none;
+    width: 96%;
+    position: absolute;
+    top: 69.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    transition: 0.5s;
+  }
+  .dropDown.active {
+    transform: perspective(1000px) rotateX(0deg);
+    opacity: 1;
+  }
+  .dropDown button {
+    width: 100%;
+    background-color: rgba(29, 74, 134);
+    border: solid 1px black;
+    font-size: 20px;
+    padding: 10px;
+    text-shadow: 0.01em 0.01em 0.09em black;
+  }
+  #mobileNav {
+    background-color: rgb(223, 223, 28);
+    padding: 1%;
+    border: solid 1px black;
+    border-radius: 10px;
+  }
+  /* main content */
+  .welcome,
+  .testimonials {
+    display: flex;
+    background-color: rgba(29, 74, 134, 0.801);
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .welcome h1,
+  .welcome p,
+  .testimonials h1,
+  .testimonials p {
+    color: rgb(223, 223, 28);
+    margin: 10px;
+  }
+  .welcome img {
+    width: 95vw;
+    margin: auto;
+  }
+  .testimonials section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .testimonials img {
+  }
+  footer {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(29, 74, 134, 0.801);
+    margin-top: 5px;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .foot img {
+    margin: 2px;
+  }
+  .legacy {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .interac {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 1199px) {
+}
+@media all and (min-width: 1200px) {
+}
