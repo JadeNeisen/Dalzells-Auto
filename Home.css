@@ -4,9 +4,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
 }
 .activePage {
-  color: white;
+  color: rgb(121, 121, 121);
 }
 @media all and (max-width: 767px) {
   .Header,
@@ -27,12 +28,10 @@
   .mobile h1 {
     font-size: 16px;
     text-align: right;
-    color: rgb(223, 223, 28);
     text-shadow: 0.01em 0.01em 0.09em black;
   }
   .mobile a {
     text-decoration: none;
-    color: rgb(223, 223, 28);
   }
   .dropDown {
     display: none;
@@ -61,10 +60,21 @@
     text-shadow: 0.01em 0.01em 0.09em black;
   }
   #mobileNav {
-    background-color: rgb(223, 223, 28);
     padding: 1%;
-    border: solid 1px black;
+    border: outset 2px rgb(77, 77, 77);
     border-radius: 10px;
+    background-color: black;
+    align-items: center;
+  }
+  .phone {
+    background-color: black;
+    border: outset 2px rgb(77, 77, 77);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
   }
   /* main content */
   .welcome,
@@ -90,7 +100,6 @@
   .welcome p,
   .testimonials h1,
   .testimonials p {
-    color: rgb(223, 223, 28);
     margin: 10px;
   }
   .welcome img {
@@ -146,12 +155,10 @@
   .mobile h1 {
     font-size: 24px;
     text-align: right;
-    color: rgb(223, 223, 28);
     text-shadow: 0.01em 0.01em 0.09em black;
   }
   .mobile a {
     text-decoration: none;
-    color: rgb(223, 223, 28);
   }
   .dropDown {
     display: none;
@@ -180,12 +187,21 @@
     text-shadow: 0.01em 0.01em 0.09em black;
   }
   #mobileNav {
-    background-color: rgb(223, 223, 28);
-    padding: 2%;
-    border: solid 1px black;
+    padding: 1%;
+    border: outset 2px rgb(77, 77, 77);
+    border-radius: 10px;
+    background-color: black;
+    align-items: center;
+  }
+  .phone {
+    background-color: black;
+    border: outset 2px rgb(77, 77, 77);
     border-radius: 10px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    padding: 5px;
   }
   /* main content */
   .welcome,
@@ -206,7 +222,6 @@
   .welcome p,
   .testimonials h1,
   .testimonials p {
-    color: rgb(223, 223, 28);
     margin: 10px;
   }
   .welcome img {
@@ -274,14 +289,18 @@
     display: flex;
     justify-content: space-between;
     background-color: rgba(29, 74, 134, 0.801);
-    color: rgb(223, 223, 28);
     text-shadow: 0.01em 0.01em 0.09em black;
     text-align: center;
     height: 172px;
   }
   .Header a {
-    color: rgb(223, 223, 28);
     text-decoration: none;
+    transition: 0.5s;
+  }
+  .Header a:hover,
+  .Header a:focus {
+    text-shadow: 0.01em 0.01em 0.5em black;
+    font-size: 110%;
   }
   #sportsCar {
     position: relative;
@@ -296,21 +315,26 @@
   }
   .navBar nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(29, 74, 134, 0.801);
-    padding: 5%;
   }
   .navBar button {
     background-color: transparent;
     border: none;
     font-size: 150%;
+    background-color: rgba(29, 74, 134, 0.801);
+    padding: 5%;
+    transition: 0.5s ease;
+  }
+  .navBar button:hover,
+  .navBar button:focus {
+    background-color: rgba(0, 0, 255, 0.5);
   }
   .navBar a {
-    color: rgb(223, 223, 28);
     text-decoration: none;
     text-shadow: 0.01em 0.01em 0.09em black;
   }
+  /* Main Content */
   .welcomeFull {
     display: flex;
     background-color: rgba(29, 74, 134, 0.801);
@@ -358,13 +382,11 @@
   }
   .welcomeFull h1,
   .testimonials h1 {
-    color: rgb(223, 223, 28);
     margin: 10px;
     text-shadow: 0.01em 0.01em 0.09em black;
   }
   .welcomeFull p,
   .testimonials p {
-    color: rgb(223, 223, 28);
     margin: 10px;
     font-size: 130%;
   }
