@@ -61,14 +61,14 @@
   }
   #mobileNav {
     padding: 1%;
-    border: outset 2px rgb(77, 77, 77);
+    border: outset 2px rgb(104, 103, 103);
     border-radius: 10px;
     background-color: black;
     align-items: center;
   }
   .phone {
     background-color: black;
-    border: outset 2px rgb(77, 77, 77);
+    border: outset 2px rgb(104, 103, 103);
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -135,12 +135,33 @@
     justify-content: center;
     align-items: center;
   }
+  /* About  */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(29, 74, 134, 0.801);
+  }
+  .container img {
+    width: 49%;
+    height: 120px;
+  }
+  .container section {
+    margin: 5px;
+  }
+  .aboutpic1,
+  .aboutpic2 {
+    display: none;
+  }
 }
-@media all and (min-width: 768px) and (max-width: 1199px) {
+@media all and (min-width: 768px) and (max-width: 1099px) {
   .Header,
   .navBar,
   .nav,
-  .welcomeFull {
+  .welcomeFull,
+  .aboutpic1,
+  .aboutpic2 {
     display: none;
   }
   /* header */
@@ -277,11 +298,34 @@
     justify-content: center;
     align-items: center;
   }
+  /* About  */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(29, 74, 134, 0.801);
+  }
+  .container h1 {
+    margin-bottom: 15px;
+  }
+  .container img {
+    width: 49.5%;
+    height: 300px;
+  }
+  .container section {
+    margin: 15px;
+  }
+  .aboutpic1,
+  .aboutpic2 {
+    display: none;
+  }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1100px) {
   .mobileHeader,
   #mobilImg,
-  .welcome {
+  .welcome,
+  .picsMobile {
     display: none;
   }
   .Header {
@@ -422,5 +466,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  /* About */
+  .container {
+    background-color: rgba(29, 74, 134, 0.801);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  .container h1 {
+    margin: 10px;
+    text-shadow: 0.01em 0.01em 0.09em black;
+  }
+  .container p {
+    margin: 10px;
+    font-size: 130%;
+  }
+  .about1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 62.5%;
+  }
+  .about2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 62%;
+    margin-left: 1%;
+  }
+  .container img {
+    margin: 10px;
+    width: 95%;
+    height: 95%;
   }
 }
