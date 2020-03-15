@@ -154,6 +154,69 @@
   .aboutpic2 {
     display: none;
   }
+  /* About  */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(29, 74, 134, 0.801);
+  }
+  .container h1 {
+    margin-bottom: 15px;
+  }
+  .container img {
+    width: 49%;
+    height: 100px;
+  }
+  .container section {
+    margin: 15px;
+  }
+  .aboutpic1,
+  .aboutpic2 {
+    display: none;
+  }
+  /* Services */
+  .services-container {
+    background-color: rgba(29, 74, 134, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    font-size: 80%;
+  }
+  .gallery {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1px;
+  }
+  .gallery img {
+    width: 100px;
+    height: 80px;
+    border: outset 3px rgb(95, 95, 95);
+    margin: 2px;
+    transition: 0.5s ease;
+  }
+  .gallery img:hover,
+  .gallery img:focus {
+    border: outset 3px rgb(240, 240, 240);
+  }
+  .service-list,
+  .service-list h1,
+  .service-list h2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin: 10px;
+  }
+  ul {
+    list-style-type: none;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 1099px) {
   .Header,
@@ -319,6 +382,47 @@
   .aboutpic1,
   .aboutpic2 {
     display: none;
+  }
+  /* Services */
+  .services-container {
+    background-color: rgba(29, 74, 134, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    font-size: 150%;
+  }
+  .gallery {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5px;
+  }
+  .gallery img {
+    width: 200px;
+    height: 150px;
+    border: outset 3px rgb(95, 95, 95);
+    margin: 2px;
+    transition: 0.5s ease;
+  }
+  .gallery img:hover,
+  .gallery img:focus {
+    border: outset 3px rgb(240, 240, 240);
+  }
+  .service-list,
+  .service-list h1,
+  .service-list h2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin: 10px;
+  }
+  ul {
+    list-style-type: none;
   }
 }
 @media all and (min-width: 1100px) {
@@ -503,5 +607,43 @@
     margin: 10px;
     width: 95%;
     height: 95%;
+  }
+  /* Services */
+  .services-container {
+    background-color: rgba(29, 74, 134, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .gallery {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 10px;
+  }
+  .gallery img {
+    width: 200px;
+    height: 150px;
+    border: outset 3px rgb(95, 95, 95);
+    margin: 2px;
+    transition: 0.5s ease;
+  }
+  .gallery img:hover,
+  .gallery img:focus {
+    border: outset 3px rgb(240, 240, 240);
+  }
+  .service-list h1 {
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+  .service-list h2 {
+    margin-top: 20px;
+  }
+  ul {
+    line-height: 22px;
   }
 }
