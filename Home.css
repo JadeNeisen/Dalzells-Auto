@@ -599,6 +599,12 @@
     height: 135px;
     margin: 5px;
   }
+  .member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   h1 {
     font-size: 200%;
     margin-right: 3px;
