@@ -127,6 +127,9 @@
     display: flex;
     justify-content: flex-end;
   }
+  .legacy img {
+    width: 30%;
+  }
   .interac {
     display: flex;
     justify-content: flex-start;
@@ -135,6 +138,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .payment img {
+    width: 250%;
+    margin-left: 150%;
+  }
+  .facebook {
+    width: 15%;
   }
   /* About  */
   .container {
@@ -361,6 +371,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    width: 100%;
   }
   .testimonials img {
     width: 140px;
@@ -387,17 +398,16 @@
     display: flex;
     justify-content: flex-end;
   }
-  .interac {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .interac img {
-    width: 65px;
+  .legacy img {
+    width: 30%;
   }
   .payment {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .facebook {
+    width: 15%;
   }
   /* About  */
   .container {
@@ -515,6 +525,38 @@
     text-shadow: 0.01em 0.01em 0.09em black;
     text-align: center;
     height: 172px;
+    width: 100%;
+  }
+  .banner h1 {
+    font-size: 600%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.01em 0.01em 0.09em rgb(31, 31, 31);
+    width: 100%;
+    font-family: "Lobster", cursive;
+    margin-left: 5%;
+    background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgb(122, 130, 250)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .banner h2 {
+    margin-left: 5%;
+    text-shadow: 0.01em 0.01em 0.09em rgb(31, 31, 31);
+    background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgb(122, 130, 250)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Header h2 {
+    font-size: 200%;
   }
   .Header a {
     text-decoration: none;
@@ -654,6 +696,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .facebook {
+    display: flexbox;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px;
+    text-align: center;
+    width: 8%;
   }
   /* About */
   .container {
