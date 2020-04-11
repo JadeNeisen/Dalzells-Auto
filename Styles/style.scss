@@ -53,7 +53,7 @@
   }
   .dropDown button {
     width: 100%;
-    background-color: rgba(29, 74, 134);
+    background-color: rgb(29, 74, 134);
     border: solid 1px black;
     font-size: 20px;
     padding: 10px;
@@ -311,7 +311,7 @@
   }
   .dropDown button {
     width: 100%;
-    background-color: rgba(29, 74, 134);
+    background-color: rgb(29, 74, 134);
     border: solid 1px black;
     font-size: 36px;
     padding: 10px;
@@ -527,33 +527,20 @@
     height: 172px;
     width: 100%;
   }
-  .banner h1 {
-    font-size: 600%;
+  .banner {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    text-shadow: 0.01em 0.01em 0.09em rgb(31, 31, 31);
-    width: 100%;
-    font-family: "Lobster", cursive;
-    margin-left: 5%;
-    background: linear-gradient(
-      to bottom,
-      rgb(255, 255, 255),
-      rgb(122, 130, 250)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-left: -15%;
+    width: 90%;
   }
+
   .banner h2 {
-    margin-left: 5%;
-    text-shadow: 0.01em 0.01em 0.09em rgb(31, 31, 31);
-    background: linear-gradient(
-      to bottom,
-      rgb(255, 255, 255),
-      rgb(122, 130, 250)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-left: -45%;
+    margin-top: -25px;
+    text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
+    color: rgb(48, 48, 48);
   }
   .Header h2 {
     font-size: 200%;
